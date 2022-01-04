@@ -8,6 +8,8 @@ const User = new Schema({
     registrationDate: {type: Date, required: true},
     status:{type: String, required: true, default: 'Unlocked'},
     role:{type: String, required: true, default: 'User'},
-    lastLoginDateTime: {type: Date}
+    lang:{type: String, required: true, default: 'ru_RU'},
+    theme:{type: String, required: true, default: 'White'},
+
 })
 module.exports = model('User', User)

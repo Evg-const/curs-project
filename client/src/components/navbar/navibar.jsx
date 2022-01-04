@@ -9,7 +9,6 @@ import {logout} from "../../reducers/userReducer"
 const Navibar = () =>{
     const isAuth = useSelector(state => state.user.isAuth)
     const dispatch = useDispatch()
-
     return(
         <div>
             <Navbar bg="dark" variant="dark">
